@@ -1,7 +1,7 @@
 FROM gliderlabs/alpine:3.2
 MAINTAINER Greg Poirier <greg@opsee.co>
 
-PATH=/opt/bin:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin
+ENV PATH=/opt/bin:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin
 
 RUN apk add --update bash python py-pip curl && \
     mkdir -p /opt/bin && \
