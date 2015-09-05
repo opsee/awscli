@@ -1,4 +1,5 @@
 #!/bin/bash
+set -a
 
 AWS=$(curl -X OPTIONS -f --connect-timeout 2 http://169.254.169.254/latest/ > /dev/null 2>&1; echo $?)
 MAX_RETRIES=5
